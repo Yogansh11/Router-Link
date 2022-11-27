@@ -1,0 +1,15 @@
+<h2>Child</h2>
+<!-- <input #my_input2> -->
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Input</mat-label>
+    <input matInput placeholder="Ex. Name" #my_input2 >
+  </mat-form-field>
+</form>
+
+<div class="example-button-row" (click)="onclick2(my_input2.value)">
+  <button mat-raised-button color="warn" style="margin-left: 30px ;">Send</button>
+</div>
+<br>
+<br>
+<div>Data from Parent:- {{val}}</div>

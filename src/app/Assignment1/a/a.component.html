@@ -1,0 +1,19 @@
+<h2>Parent</h2>
+<!-- <input #my_input1> -->
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Input</mat-label>
+    <input matInput placeholder="Ex. Name" #my_input1>
+  </mat-form-field>
+</form>
+
+<div class="example-button-row" (click)="onClick1(my_input1.value)">
+  <button mat-raised-button color="warn" style="margin-left: 30px ;">Send</button>
+</div>
+<br>
+<br>
+<div>Data from Child:-{{data}}</div>
+<br>
+<br>
+
+<app-b [val]= "out" (parcomp) = "parcomp($event)" ></app-b>
